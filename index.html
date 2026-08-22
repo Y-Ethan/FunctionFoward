@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Function Forward</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/Images/Function Forward.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <a href="#" class="logo">
+          <span class="animated-brand-text">Function Forward</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#about" class="nav-link">Mission</a></li>
+          <li><a href="#metrics" class="nav-link">Impact</a></li>
+          <li><a href="#projects" class="nav-link">Hardware</a></li>
+          <li><a href="#request" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="main-content">
+   
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Engineering Accessibility. Empowering Communities.</h1>
+        <p class="hero-subtitle">
+          A student-led initiative delivering open-source, 3D-printed assistive technologies.
+        </p>
+        <div class="hero-cta">
+          <a href="#request" class="btn btn-primary">Contact</a>
+          <a href="#about" class="btn btn-secondary">Explore</a>
+        </div>
+
+        <div class="hero-main-img">
+          <div class="img-placeholder" role="img" aria-label="Featured Function Forward 3D printed devices banner placeholder">
+            <img src="images/Featured Image 1.jpg" alt="3D printed assistive switch and adaptive hardware components laid out on a workshop table">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT & MISSION -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <span class="section-label">01 / The Mission</span>
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="img-placeholder" role="img" aria-label="Workshop assembly photo placeholder">
+              <img src="images/3D Print in Progress 1 December 2025.JPG" alt="3D-printer in action printing assistive device components in a workshop setting">
+              <span></span>
+            </div>
+          </div>
+          <div class="about-text">
+            Function Forward bridges the gap between mechanical/electrical engineering and accessible living. By translating functional CAD into physical devices, we work to dismantle everyday accessibility barriers while providing open-source hardware locally at no cost to recipients.
+           
+            <div class="supporter-line">
+              Supported by <strong>Makers Making Change</strong> and <strong>TakingITGlobal</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. METRICS / QUANTIFIABLE IMPACT GRID -->
+        <div id="metrics" class="metrics-grid" role="region" aria-label="Quantifiable Impact">
+          <div class="metric-card">
+            <span class="metric-num">01 / Distributed</span>
+            <div class="metric-stat">100+</div>
+            <h3 class="metric-title">Devices Delivered</h3>
+            <p class="metric-desc">Hand-assembled assistive tools, switches, and custom devices delivered locally.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-num">02 / Commitment</span>
+            <div class="metric-stat">500+</div>
+            <h3 class="metric-title">Hours Spent</h3>
+            <p class="metric-desc">Building and testing open-source devices to ensure they meet the needs of the community.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-num">03 / Accessibility</span>
+            <div class="metric-stat">$0</div>
+            <h3 class="metric-title">Cost to Recipients</h3>
+            <p class="metric-desc">Every device is printed, wired, tested, and distributed directly to users without charge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. RECENT BUILDS & HOW IT WORKS -->
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="projects-header">
+          <span class="section-label">02 / Hardware Portfolio</span>
+          <h2 class="projects-title">Recent Builds</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1: Switches -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <div class="img-placeholder" role="img" aria-label="Assistive Switch photo placeholder">
+                <img src="images/switch-adapter.jpg" alt="3D printed spruce mini joysticks and forest hubs">
+                <span></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div>
+                <span class="project-tag">Adaptive Hardware</span>
+                <h3 class="project-title">Assistive Joystick &amp; Adapters</h3>
+                <p class="project-desc">
+                  Assembled three Spruce Mini Joysticks utilizing joystick modules and 3D-printed hardware.
+                </p>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-small open-modal-btn"
+                  data-title="Assistive Switches &amp; Adapters"
+                  data-spec="Enclosure: 3D Printed PETG| Electronics: Joystick Module with 3.5 audio cables">
+                  View CAD / Specs
+                </button>
+                <a href="https://github.com/makersmakingchange/Spruce-Mini-Joystick" class="btn btn-primary btn-small">Open Source Docs</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: LipSync Device -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <div class="img-placeholder" role="img" aria-label="LipSync Device photo placeholder">
+                <img src="images/LipSync 1 July 2026.jpg" alt="Sip and puff LipSync mouth operated computer mouse circuitry">
+                <span></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div>
+                <span class="project-tag">MMC Open-Source Library</span>
+                <h3 class="project-title">LipSync Assistive Mouse</h3>
+                <p class="project-desc">
+                  A mouth-operated joystick that enables individuals with limited hand mobility to control touchscreens and computer cursors via sip-and-puff controls.
+                </p>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-small open-modal-btn"
+                  data-title="LipSync Assistive Mouse"
+                  data-spec="Microcontroller: Custom PCB with ports, tactile buttons, and OLED display | Input: Force-sensing joystick with pressure sensors | Mounting: Modular clamp assembly.">
+                  View CAD / Specs
+                </button>
+                <a href="https://github.com/makersmakingchange/LipSync" class="btn btn-primary btn-small">Open Source Docs</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Custom Adapted Water Gun -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <div class="img-placeholder" role="img" aria-label="Splattershot Water Gun photo placeholder">
+                <img src="images/watergun.jpg" alt="Switch adapted motorized splattershot water gun">
+                <span></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div>
+                <span class="project-tag">Custom Adaptation</span>
+                <h3 class="project-title">Adapted Splattershot Water Gun</h3>
+                <p class="project-desc">
+                  A custom modification of a recreational electric water blaster, switch-adapted with an external MMC60 switch for accessible summer play.
+                </p>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-small open-modal-btn"
+                  data-title="Adapted Splattershot Water Gun"
+                  data-spec="Modification: Internal wiring harness rerouted to external 3.5mm accessible jack | Actuator: Motorized pump trigger | Power: Battery isolated relay.">
+                  View CAD / Specs
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- HOW IT WORKS -->
+        <div class="process-section">
+          <span class="section-label">03 / Process</span>
+          <h2 class="projects-title">How Our Builds Work</h2>
+          <div class="process-grid">
+            <div class="process-step">
+              <span class="process-num">STEP 01 // SELECT OR REQUEST</span>
+              <h3 class="process-title">Choose from the Library</h3>
+              <p class="process-desc">
+                Browse the official Makers Making Change device library of over 200 open-source assistive tools, or submit a request for a custom adaptation.
+              </p>
+            </div>
+            <div class="process-step">
+              <span class="process-num">STEP 02 // BUILD &amp; ADAPT</span>
+              <h3 class="process-title">Engineering &amp; Assembly</h3>
+              <p class="process-desc">
+                Our team 3D-prints the enclosures, solders electronics, and hand-assembles each device to strict quality standards.
+              </p>
+            </div>
+            <div class="process-step">
+              <span class="process-num">STEP 03 // DELIVER</span>
+              <h3 class="process-title">Local Distribution</h3>
+              <p class="process-desc">
+                Finished devices are tested and delivered directly to individuals, families, and communities locally at zero cost.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DEVICE REQUEST FORM -->
+    <section id="request" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-label">04 / Contact</span>
+            <h2>Request a Device or Ask a Question</h2>
+            <p>
+              We build and distribute assistive technologies free of charge. Tell us which device you need, how many, and any specific adaptations required or simply ask us a question.
+            </p>
+          </div>
+
+
+          <!-- Web3Forms Integration -->
+          <form action="https://api.web3forms.com/submit" method="POST" aria-label="Device Request Form">
+            <input type="hidden" name="access_key" value="684c5d66-3c98-414f-96fe-469f7ad22f6f">
+            <input type="hidden" name="subject" value="New Device Request // Function Forward">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" aria-hidden="true">
+
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required aria-required="true" placeholder="Full Name" autocomplete="name">
+            </div>
+
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required aria-required="true" placeholder="email@address.com" autocomplete="email">
+            </div>
+
+           <span class="label-hint">Requested hardware and amount should only be filled out if you are requesting a device.</span>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="device">Requested Hardware / Device Name</label>
+                <input type="text" id="device" name="device" aria-required="true" placeholder="e.g., LipSync, Raindrop Switch...">
+                <span class="label-hint">
+                  Unsure of the exact name? <a href="https://www.makersmakingchange.com/assistive-devices" target="_blank" rel="noopener">Browse the official MMC Device Library &rarr;</a>
+                </span>
+              </div>
+
+
+              <div class="form-group">
+                <label for="quantity">Amount / Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="15"value="0" aria-required="true">
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="message">Custom Specs / Questions</label>
+              <textarea id="message" name="message" required aria-required="true" placeholder="Please share details on switch activation pressure needs, mounting requirements, or custom modifications required..."></textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copy">
+          <div>&copy; 2026 Function Forward. All rights reserved.</div>
+          <div class="footer-support-text">Supported by Makers Making Change and TakingITGlobal.</div>
+        </div>
+        <div class="footer-links" aria-label="Footer Navigation">
+          <a href="https://github.com/makersmakingchange" target="_blank" rel="noopener">GitHub / CAD Repo</a>
+          <a href="#request">Contact</a>
+          <a href="https://www.makersmakingchange.com" target="_blank" rel="noopener">MMC Official</a>
+          <a href="https://www.takingitglobal.org" target="_blank" rel="noopener">TakingITGlobal Official</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div
+    id="specsModal"
+    class="modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+    aria-hidden="true">
+    <div class="modal-content">
+      <button type="button" class="modal-close" id="closeModalBtn" aria-label="Close specifications window">&times;</button>
+      <div class="modal-header">
+        <span class="section-label">CAD // TECHNICAL SPECIFICATIONS</span>
+        <h3 class="modal-title" id="modalTitle">Device Title</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Hardware Overview</h4>
+        <p id="modalSpecText">Specifications loading...</p>
+        <h4>Standard Materials &amp; Assembly</h4>
+        <ul>
+          <li>PETG 3D Printed Enclosure (Most colors)</li>
+          <li>Lead-free solder with flux</li>
+          <li>Tested to meet specified criteria</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
