@@ -11,7 +11,6 @@
   <link rel="icon" type="image/png" href="/Images/Function Forward.png">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
-
 </head>
 <body>
 
@@ -34,8 +33,10 @@
 
         <ul class="nav-links" id="nav-menu">
           <li><a href="#about" class="nav-link">Mission</a></li>
+          <li><a href="#founder" class="nav-link">Founder</a></li>
           <li><a href="#metrics" class="nav-link">Impact</a></li>
           <li><a href="#projects" class="nav-link">Hardware</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
           <li><a href="#request" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -45,6 +46,7 @@
   <!-- MAIN CONTENT CONTAINER -->
   <main id="main-content">
    
+    <!-- 1. HERO -->
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Engineering Accessibility. Empowering Communities.</h1>
@@ -85,7 +87,7 @@
           </div>
         </div>
 
-        <!-- 3. METRICS / QUANTIFIABLE IMPACT GRID -->
+        <!-- METRICS / QUANTIFIABLE IMPACT GRID -->
         <div id="metrics" class="metrics-grid" role="region" aria-label="Quantifiable Impact">
           <div class="metric-card">
             <span class="metric-num">01 / Distributed</span>
@@ -109,11 +111,35 @@
       </div>
     </section>
 
+    <!-- 3. ABOUT THE FOUNDER -->
+    <section id="founder" class="section-pad">
+      <div class="container">
+        <span class="section-label">02 / Leadership</span>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="projects-title">Behind the Initiative</h2>
+            <p>
+              Function Forward was founded by Ethan Yeung, a student engineer passionate about leveraging 3D design, rapid prototyping, and microcontroller firmware to solve practical human accessibility challenges.
+            </p>
+            <p>
+              What began as individual CAD modeling and circuit fabrication evolved into a dedicated community mission: connecting local accessibility needs directly with open-source hardware solutions. Supported by Makers Making Change and the Sprout Ideas Fellowship through TakingITGlobal, Ethan leads device assembly, testing, and distribution to ensure accessible devices reach those who need them—completely free of charge.
+            </p>
+          </div>
+          <div class="about-visual">
+            <div class="img-placeholder" role="img" aria-label="Ethan Yeung working on hardware assembly">
+              <img src="images/Ethan Founder.jpg" alt="Ethan Yeung assembling assistive technology">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 4. RECENT BUILDS & HOW IT WORKS -->
     <section id="projects" class="section-pad">
       <div class="container">
         <div class="projects-header">
-          <span class="section-label">02 / Hardware Portfolio</span>
+          <span class="section-label">03 / Hardware Portfolio</span>
           <h2 class="projects-title">Recent Builds</h2>
         </div>
 
@@ -135,7 +161,7 @@
                 </p>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/makersmakingchange/Spruce-Mini-Joystick" class="btn btn-primary btn-small">Open Source Docs</a>
+                <a href="https://github.com/makersmakingchange/Spruce-Mini-Joystick" class="btn btn-primary btn-small" target="_blank" rel="noopener">Open Source Docs</a>
               </div>
             </div>
           </article>
@@ -157,7 +183,7 @@
                 </p>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/makersmakingchange/LipSync" class="btn btn-primary btn-small">Open Source Docs</a>
+                <a href="https://github.com/makersmakingchange/LipSync" class="btn btn-primary btn-small" target="_blank" rel="noopener">Open Source Docs</a>
               </div>
             </div>
           </article>
@@ -186,7 +212,7 @@
 
         <!-- HOW IT WORKS -->
         <div class="process-section">
-          <span class="section-label">03 / Process</span>
+          <span class="section-label">04 / Process</span>
           <h2 class="projects-title">How Our Builds Work</h2>
           <div class="process-grid">
             <div class="process-step">
@@ -215,18 +241,56 @@
       </div>
     </section>
 
-    <!-- 5. DEVICE REQUEST FORM -->
+    <!-- 5. TESTIMONIALS & COMMUNITY IMPACT
+    <section id="testimonials" class="section-pad">
+      <div class="container">
+        <div class="projects-header">
+          <span class="section-label">05 / Community Feedback</span>
+          <h2 class="projects-title">Testimonials &amp; Impact</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <span class="process-num">RECIPIENT FEEDBACK</span>
+            <h3 class="process-title">"Immediate Independence"</h3>
+            <p class="process-desc">
+              "The switch adaptation made accessible recreation and interaction possible without the steep financial barrier of commercial options."
+            </p>
+            <span class="label-hint">— Community Recipient</span>
+          </div>
+
+          <div class="process-step">
+            <span class="process-num">ACCESSIBILITY ADVOCACY</span>
+            <h3 class="process-title">"Reliable &amp; Precise Build"</h3>
+            <p class="process-desc">
+              "The assembly standards of the LipSync and custom switches ensure seamless, dependable daily use for end users."
+            </p>
+            <span class="label-hint">— Community Partner</span>
+          </div>
+
+          <div class="process-step">
+            <span class="process-num">OPEN SOURCE MISSION</span>
+            <h3 class="process-title">"Youth-Led Engineering"</h3>
+            <p class="process-desc">
+              "Function Forward shows how student-led hardware builds can bridge local accessibility gaps through open-source design."
+            </p>
+            <span class="label-hint">— Maker Partner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <!-- 6. DEVICE REQUEST FORM -->
     <section id="request" class="contact-section">
       <div class="container">
         <div class="contact-grid">
           <div class="contact-info">
-            <span class="section-label">04 / Contact</span>
+            <span class="section-label">06 / Contact</span>
             <h2>Request a Device or Ask a Question</h2>
             <p>
               We build and distribute assistive technologies free of charge. Tell us which device you need, how many, and any specific adaptations required or simply ask us a question.
             </p>
           </div>
-
 
           <!-- Web3Forms Integration -->
           <form action="https://api.web3forms.com/submit" method="POST" aria-label="Device Request Form">
@@ -234,41 +298,36 @@
             <input type="hidden" name="subject" value="New Device Request // Function Forward">
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" aria-hidden="true">
 
-
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="name" required aria-required="true" placeholder="Full Name" autocomplete="name">
             </div>
-
 
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" name="email" required aria-required="true" placeholder="email@address.com" autocomplete="email">
             </div>
 
-           <span class="label-hint">Requested hardware and amount should only be filled out if you are requesting a device.</span>
+            <span class="label-hint">Requested hardware and amount should only be filled out if you are requesting a device.</span>
             <div class="form-row">
               <div class="form-group">
                 <label for="device">Requested Hardware / Device Name</label>
-                <input type="text" id="device" name="device" aria-required="true" placeholder="e.g., LipSync, Raindrop Switch...">
+                <input type="text" id="device" name="device" placeholder="e.g., LipSync, Raindrop Switch...">
                 <span class="label-hint">
                   Unsure of the exact name? <a href="https://www.makersmakingchange.com/assistive-devices" target="_blank" rel="noopener">Browse the official MMC Device Library &rarr;</a>
                 </span>
               </div>
 
-
               <div class="form-group">
                 <label for="quantity">Amount / Quantity</label>
-                <input type="number" id="quantity" name="quantity" min="0" max="15"value="0" aria-required="true">
+                <input type="number" id="quantity" name="quantity" min="0" max="15" value="0">
               </div>
             </div>
-
 
             <div class="form-group">
               <label for="message">Custom Specs / Questions</label>
               <textarea id="message" name="message" required aria-required="true" placeholder="Please share details on switch activation pressure needs, mounting requirements, or custom modifications required..."></textarea>
             </div>
-
 
             <button type="submit" class="btn btn-primary">Submit Request</button>
           </form>
@@ -295,6 +354,7 @@
     </div>
   </footer>
 
+  <!-- MODAL DIALOG -->
   <div
     id="specsModal"
     class="modal-overlay"
